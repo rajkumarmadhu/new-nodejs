@@ -7,13 +7,15 @@
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "cfenv": "^1.1.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3",
     "nodemon": "^1.18.9"
   },
   "engines": {
@@ -23,19 +25,14 @@
     "type": "git",
     "url": "https://github.com/MithunTechnologies/node-js-application"
   },
-  
   "keywords": [
-    "node","scripts": {
-    "server": "http-server -c-1 -p 9999",
-    "start1": "nodemon app.js",
-     "start": "node app.js",
-     "test": "jest --coverage"
-}
-
+    "node",
     "Mithun Technologies",
     "express"
   ],
   "author": "Mithun Reddy Lacchannagari",
-  "license": "MIT"
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
-
