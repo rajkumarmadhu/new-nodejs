@@ -23,11 +23,19 @@
     "type": "git",
     "url": "https://github.com/MithunTechnologies/node-js-application"
   },
+  
   "keywords": [
-    "node",
+    "node","scripts": {
+    "server": "http-server -c-1 -p 9999",
+    "start1": "nodemon app.js",
+     "start": "node app.js",
+     "test": "jest --coverage"
+}
+
     "Mithun Technologies",
     "express"
   ],
   "author": "Mithun Reddy Lacchannagari",
   "license": "MIT"
 }
+
